@@ -35,6 +35,7 @@ function App() {
         <>
           <img
             className="mb-4"
+            alt="github-mark"
             src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
             width="150"
           ></img>
@@ -43,7 +44,7 @@ function App() {
             type="primary"
             className="btn"
             size="lg"
-            href="https://github.com/login/oauth/authorize?client_id=8f672e53bc6b92be977d&redirect_uri=http://localhost:8080/oauth/redirect"
+            href="https://github.com/login/oauth/authorize?client_id=e0808549c23a2ea7042a&redirect_uri=http://localhost:8080/oauth/redirect"
           >
             Sign in
           </Button>
