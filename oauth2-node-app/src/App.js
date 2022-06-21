@@ -15,7 +15,7 @@ function App() {
     );
 
     axios
-      .get("http://localhost:8010/proxy/user", {
+      .get("https://api.github.com/user", {
         headers: {
           Authorization: "token " + token,
         },
@@ -58,8 +58,8 @@ function App() {
 
           <CardDeck>
             {[...Array(3)].map((e, i) => (
-              <Card style={{ maxWidth: "25%", margin: "auto" }}>
-                <Card.Img variant="top" src={user.avatar_url} />
+              <Card key={i} style={{ maxWidth: "25%", margin: "auto" }}>
+                <Card.Img alt={user.name} variant="top" src={user.avatar_url} />
                 <Card.Body>
                   <Card.Title>{user.name}</Card.Title>
                   <Card.Text>{user.bio}</Card.Text>
